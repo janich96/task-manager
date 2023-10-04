@@ -1,0 +1,15 @@
+.rdw-editor-toolbar {
+    display: flex;
+    cursor: pointer;
+}
+
+.rdw-inline-wrapper, .rdw-list-wrapper, .rdw-text-align-wrapper, .rdw-link-wrapper, .rdw-history-wrapper {
+    display: flex;
+    margin: 5px;
+}
+
+.rdw-editor-main {
+    border: solid 1px #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
