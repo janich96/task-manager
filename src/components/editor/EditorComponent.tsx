@@ -16,8 +16,7 @@ const EditorComponent = () => {
     const dispatch = useDispatch();
 
     const saveEditorContent = () => {
-        const contentStateJSON = EditorState.createWithContent(convertFromRaw(JSON.parse(content)));
-        console.log(contentStateJSON);
+        const contentStateJSON = content;
         saveEditorState(contentStateJSON);
         dispatch(addTaskAction(contentStateJSON));
     }
@@ -25,9 +24,9 @@ const EditorComponent = () => {
     const loadEditorContent = () => {
         const contentStateJSON = loadEditorState();
         if (contentStateJSON) {
-            const contentState = convertFromRaw(contentStateJSON);
-            const newEditorState = EditorState.createWithContent(contentState);
-            dispatch(addTaskAction(newEditorState));
+            const contentState = contentStateJSON;
+            const newEditorState = contentState;
+            dispatch(addTaskAction(content));
         }
         
     }

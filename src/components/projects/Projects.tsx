@@ -33,6 +33,7 @@ const Projects = () => {
             </button>
             <section className={styles.projectsSection}>
                 {
+                    // @ts-ignore
                     projectsArr.projects.map((project: ProjectsArray) => (
                         <div className={styles.projectItem} key={project.id}>
                             <Link 
